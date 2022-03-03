@@ -61,12 +61,10 @@ export const register = (app: Application) => {
         try {
             const data = req.body;
             const id = req.params.deliveryId
-            const updateDelivery = await db.deliveries.doc(id).update(data)
-            res.send(updateDelivery)
+            await db.deliveries.doc(id).update(data)
+            res.send(id)
         } catch (err) {
             res.send(err)
         }
-    }
-
-    )
+    })
 }
