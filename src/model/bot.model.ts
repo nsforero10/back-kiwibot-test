@@ -1,4 +1,4 @@
-export interface Delivery {
+export interface Bot {
     id: string;
     status: "available" | "busy" | "reserved";
     location: {

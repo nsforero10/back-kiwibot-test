@@ -61,12 +61,16 @@ export const register = (app: Application) => {
         try {
             const data = req.body;
             const id = req.params.deliveryId
-            const updateDelivery = await db.deliveries.doc(id).update(data)
-            res.send(updateDelivery)
+            await db.deliveries.doc(id).update(data)
+            const deliveryQuery = await db.deliveries.doc(id).get()
+            if (deliveryQuery.exists){
+                const delivery = {id: deliveryQuery.id, ...deliveryQuery.data()}
+                res.send(delivery);
+            } else {
+                res.send(404)
+            }
         } catch (err) {
             res.send(err)
         }
-    }
-
-    )
+    })
 }
