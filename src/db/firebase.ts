@@ -1,12 +1,10 @@
-import { initializeApp, applicationDefault } from 'firebase-admin/app';
+import { initializeApp, applicationDefault } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import 'dotenv';
+import "dotenv";
 
 initializeApp({
-    credential:applicationDefault(),
+  credential: applicationDefault(),
 });
 
-const database = getFirestore(); 
-export {
-    database,
-};
+const database = getFirestore();
+export { database };
