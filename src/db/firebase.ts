@@ -6,7 +6,7 @@ initializeApp({
     credential:applicationDefault(),
 });
 
-const db = getFirestore(); 
-export default {
-    db,
+const database = getFirestore(); 
+export {
+    database,
 };
