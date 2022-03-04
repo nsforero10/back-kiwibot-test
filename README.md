@@ -1,70 +1,67 @@
-# module-name  
+# back-kiwibot-test
 
-**Badges** 
+**Summary**
 
-Optional badges such as npm version, test and build coverage, and so on.
-
-**Summary** 
-
-One- or two-sentence description of what the module does.  
+A backend application for kiwibot technical test
 
 ## Overview
 
-Optionally, include a section of one or two paragraphs with more high-level 
-information on what the module does, what problems it solves, why one would 
-use it and how.  Don't just repeat what's in the summary.
+yarn
+Api to access cloud firestore database and interact with deliveries and bots
 
-## Installation
+## Run Locally
+
+Clone the project
 
 ```
-$ npm install module-name
+git clone https://github.com/nsforero10/back-kiwibot-test.git
 ```
 
-## Basic use
+Install dependencies
 
-General description of how to use the module with basic example.  
+```
+yarn
+```
 
-## API 
+Start the server
 
-Full API documentation.  
+```
+yarn dev
+```
 
 ## Examples
 
-Additional examples here.
+Postman collection with a set of request to interact with the api
+
+https://www.getpostman.com/collections/d62799662987cb600e95
 
 ## Tests
 
-What tests are included and how to run them. 
+TO-DO
 
-## Contributing
+## Authors
 
-This project welcomes contributions from the community. Contributions are
-accepted using GitHub pull requests; for more information, see 
-[GitHub documentation - Creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
-
-For a good pull request, we ask you provide the following:
-
-1. Include a clear description of your pull request in the description
-   with the basic "what" and "why"s for the request.
-2. The tests should pass as best as you can. GitHub will automatically run
-   the tests as well, to act as a safety net.
-3. The pull request should include tests for the change. A new feature should
-   have tests for the new feature and bug fixes should include a test that fails
-   without the corresponding code change and passes after they are applied.
-   The command `npm run test-cov` will generate a `coverage/` folder that
-   contains HTML pages of the code coverage, to better understand if everything
-   you're adding is being tested.
-4. If the pull request is a new feature, please include appropriate documentation 
-   in the `README.md` file as well.
-5. To help ensure that your code is similar in style to the existing code,
-   run the command `npm run lint` and fix any displayed issues.
-
-## Contributors
-
-Names of module "owners" (lead developers) and other developers who 
-have contributed.
+- [@nsforero10](https://github.com/nsforero10)
 
 ## License
 
-Link to the license, with a short description of what it is, 
-e.g. "MIT" or whatever.  
+Copyright (c) 2012-2022 Scott Chacon and others
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
