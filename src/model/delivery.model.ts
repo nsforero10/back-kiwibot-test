@@ -11,4 +11,5 @@ export interface Delivery {
     dropoff_lon: number;
   };
   zone_id: string;
+  bot: string;
 }

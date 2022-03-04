@@ -1,5 +1,5 @@
 import { Application, Request, Response } from "express";
-import { FieldValue, QueryDocumentSnapshot } from "firebase-admin/firestore";
+import { QueryDocumentSnapshot } from "firebase-admin/firestore";
 import { db } from "../db/utils";
 import { v4 as uuid4 } from "uuid";
 
@@ -21,8 +21,7 @@ export const register = (app: Application) => {
       const data = req.body;
       const id = uuid4();
       if (data.location && data.status && data.zone_id) {
-        // Use date from server to set date instead using device timestamp
-        data.creation_date = FieldValue.serverTimestamp();
+        data.creation_date = Date.now();
         await db.bots.doc(id).set(data);
       } else {
         res.send(422);
